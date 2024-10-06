@@ -40,7 +40,11 @@
   align-items: center;
   flex-direction: column;
   border: 2px var(--accent-color) solid;
-  width: clamp(23.438rem, 16.285rem + 30.52vw, 43.75rem); /*вычислял через https://min-max-calculator.9elements.com*/
+  width: clamp(
+    23.438rem,
+    16.285rem + 30.52vw,
+    43.75rem
+  ); /*вычислял через https://min-max-calculator.9elements.com*/
   text-align: center;
   margin-bottom: 102px;
   font-family: var(--accent-font);
@@ -49,11 +53,19 @@
 
 .main__title {
   padding: 136px 120.5px 20px;
-  font-size: clamp(3.063rem, 2.71rem + 1.5vw, 4.063rem); /*вычислял через https://min-max-calculator.9elements.com*/
+  font-size: clamp(
+    3.063rem,
+    2.71rem + 1.5vw,
+    4.063rem
+  ); /*вычислял через https://min-max-calculator.9elements.com*/
 }
 
 .main__text {
-  font-size: clamp(0.875rem, 0.677rem + 0.85vw, 1.438rem); /*вычислял через https://min-max-calculator.9elements.com*/
+  font-size: clamp(
+    0.875rem,
+    0.677rem + 0.85vw,
+    1.438rem
+  ); /*вычислял через https://min-max-calculator.9elements.com*/
 }
 
 .theme-menu__list {
@@ -79,7 +91,7 @@
 
 .theme-menu__button:hover {
   border-bottom: 2px solid currentColor;
-  color: var( --color-hover-menu);
+  color: var(--color-hover-menu);
 }
 
 .theme-menu__button:disabled::before {
@@ -90,8 +102,8 @@
   animation: 0.5s arrow ease-in-out infinite alternate;
 }
 
-.theme-menu__button:disabled{
-  color: var( --color-hover-menu);
+.theme-menu__button:disabled {
+  color: var(--color-hover-menu);
   border: none;
 }
 
@@ -128,7 +140,11 @@
   display: flex;
   flex-direction: column;
   border: 2px var(--accent-color) solid;
-  width: clamp(23.438rem, 16.285rem + 30.52vw, 43.75rem); /*вычислял через https://min-max-calculator.9elements.com*/
+  width: clamp(
+    23.438rem,
+    16.285rem + 30.52vw,
+    43.75rem
+  ); /*вычислял через https://min-max-calculator.9elements.com*/
   background-color: var(--background-color);
 }
 
@@ -226,7 +242,7 @@
   background-color: var(--accent-color);
 }
 
-.button__text{
+.button__text {
   mix-blend-mode: difference;
   position: relative;
   z-index: 1;
@@ -244,9 +260,7 @@
   cursor: pointer;
 }
 
-.
-
-.card__icon-button:hover .core {
+. .card__icon-button:hover .core {
   transition: fill 0.3s 0.5s linear;
   fill: black;
 }
@@ -327,7 +341,7 @@
   font-size: 14px;
   display: flex;
   flex-direction: column;
-  gap:30px;
+  gap: 30px;
   height: 191px;
   width: 353px;
   justify-content: center;
@@ -368,12 +382,10 @@
 /*---------------------------------------------------------------------------------------------------------------------------------------*/
 
 /*↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓_MOBILE_↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓*/
-@media(widht < 768px) {
+@media (widht < 768px) {
   .header,
   .card {
     width: 100%;
   }
-
-
 }
 /*---------------------------------------------------------------------------------------------------------------------------------------*/

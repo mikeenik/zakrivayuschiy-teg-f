@@ -13,16 +13,14 @@
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 */
 
-
 @keyframes arrow {
-    from {
-        transform: translateX(0);
-    }
-    50% {
-        transform: translateX(4px);
-    }
-    to {
-        transform: translateX(0);
-    }
-
+  from {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(4px);
+  }
+  to {
+    transform: translateX(0);
+  }
 }
