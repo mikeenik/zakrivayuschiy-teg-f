@@ -4,3 +4,107 @@
 ✦ theme-light — класс светлой темы
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
+
+/*Светлая тема*/
+:root.theme-light {
+  --main-font: "Inter-Variable";
+  --accent-font: "Press Start 2P";
+  --normal-font-weight: 400;
+  --bold-font-weight: 700;
+  --background-color: #ffffff;
+  --accent-color: #000000;
+  --color-hover-menu: rgba(0, 0, 0, 0.6);
+  --background-image: repeating-linear-gradient(
+      to right,
+      #d3d3d3 0%,
+      #d3d3d3 2px,
+      transparent 2px,
+      transparent 4px
+    ),
+    repeating-linear-gradient(
+      to bottom,
+      #d3d3d3 0%,
+      #d3d3d3 2px,
+      transparent 2px,
+      transparent 4px
+    ),
+    linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a 100%);
+}
+
+/*Темная тема*/
+:root.theme-dark {
+  --main-font: "Inter-Variable";
+  --accent-font: "Press Start 2P";
+  --normal-font-weight: 450;
+  --bold-font-weight: 750;
+  --background-color: #000000;
+  --accent-color: #00cc14;
+  --color-hover-menu: rgba(0, 204, 20, 0.6);
+  --background-image: repeating-linear-gradient(
+      90deg,
+      #000 0%,
+      #000 2px,
+      transparent 2px,
+      transparent 4px
+    ),
+    repeating-linear-gradient(
+      0deg,
+      #000 0%,
+      #000 2px,
+      transparent 2px,
+      transparent 4px
+    ),
+    linear-gradient(0deg, #004306 0%, #007f0c 100%);
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --main-font: "Inter-Variable";
+    --accent-font: "Press Start 2P";
+    --normal-font-weight: 400;
+    --bold-font-weight: 700;
+    --background-color: #ffffff;
+    --accent-color: #000000;
+    --background-image: repeating-linear-gradient(
+        to right,
+        #d3d3d3 0%,
+        #d3d3d3 2px,
+        transparent 2px,
+        transparent 4px
+      ),
+      repeating-linear-gradient(
+        to bottom,
+        #d3d3d3 0%,
+        #d3d3d3 2px,
+        transparent 2px,
+        transparent 4px
+      ),
+      linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a 100%);
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --main-font: "Inter-Variable";
+    --accent-font: "Press Start 2P";
+    --normal-font-weight: 450;
+    --bold-font-weight: 750;
+    --background-color: #000000;
+    --color-hover-menu: rgba(0, 204, 20, 0.6);
+    --background-image: repeating-linear-gradient(
+        to right,
+        #000,
+        #000 2px,
+        transparent 2px,
+        transparent 4px
+      ),
+      repeating-linear-gradient(
+        to bottom,
+        #000,
+        #000 2px,
+        transparent 2px,
+        transparent 4px
+      ),
+      linear-gradient(to bottom, #004306 0%, #007f0c 100%);
+  }
+}
