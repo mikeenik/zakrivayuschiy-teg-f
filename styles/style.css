@@ -29,7 +29,7 @@
   background-image: var(--background-image);
   background-size: cover;
   background-attachment: fixed;
-  font-variation-settings: 'wght' var(--normal-font-weight, 400);
+  font-variation-settings: "wght" var(--normal-font-weight, 400);
 }
 
 /*---------------------------------------------------------------------------------------------------------------------------------------*/
@@ -155,7 +155,7 @@
   border-bottom: 2px var(--accent-color) solid;
   padding: 3px 10px;
   font-size: 18px;
-  font-variation-settings: 'wght' var(--bold-font-weight, 700);
+  font-variation-settings: "wght" var(--bold-font-weight, 700);
 }
 
 .card__image-block {
@@ -262,7 +262,7 @@
   cursor: pointer;
 }
 
-. .card__icon-button:hover .core {
+.card__icon-button:hover .core {
   transition: fill 0.3s 0.5s linear;
   fill: black;
 }
@@ -286,6 +286,15 @@
 
 .like-icon.is-liked .sparks {
   fill: red;
+}
+
+.like-icon.is-liked .heart {
+  transform-origin: 50% 50%;
+  animation: 0.3s 0.1s heart_increase ease-in;
+}
+
+.like-icon.is-liked .sparks {
+  animation: 0.3s 0.3s sparks_animation ease-in;
 }
 
 .card__grayscale {
