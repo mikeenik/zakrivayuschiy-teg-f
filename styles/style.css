@@ -29,6 +29,7 @@
   background-image: var(--background-image);
   background-size: cover;
   background-attachment: fixed;
+  font-variation-settings: 'wght' var(--normal-font-weight, 400);
 }
 
 /*---------------------------------------------------------------------------------------------------------------------------------------*/
@@ -154,6 +155,7 @@
   border-bottom: 2px var(--accent-color) solid;
   padding: 3px 10px;
   font-size: 18px;
+  font-variation-settings: 'wght' var(--bold-font-weight, 700);
 }
 
 .card__image-block {
