@@ -188,7 +188,10 @@
   z-index: 1;
 }
 
-@supports ((-webkit-text-stroke: 1px var(--background-color)) or (text-stroke: 1px var(--background-color))) {
+@supports (
+  (-webkit-text-stroke: 1px var(--background-color)) or
+    (text-stroke: 1px var(--background-color))
+) {
   .card__water-mark {
     text-shadow: none;
     -webkit-text-stroke: 1px var(--background-color);
@@ -374,7 +377,7 @@
 }
 
 dialog::backdrop {
-  background: rgb(0,0,0,0.75);
+  background: rgb(0, 0, 0, 0.75);
 }
 
 .dialog__floppy {

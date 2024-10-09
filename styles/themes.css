@@ -11,7 +11,7 @@
   --bold-font-weight: 700;
   --background-color: #ffffff;
   --accent-color: #000000;
-  --button-text:#ffffff;
+  --button-text: #ffffff;
   --color-hover-menu: rgba(0, 0, 0, 0.6);
   --background-image: repeating-linear-gradient(
       to right,
@@ -35,7 +35,7 @@
   --normal-font-weight: 465;
   --bold-font-weight: 785;
   --background-color: #000000;
-  --button-text:#00cc14;
+  --button-text: #00cc14;
   --accent-color: #00cc14;
   --color-hover-menu: rgba(0, 204, 20, 0.6);
   --background-image: repeating-linear-gradient(
@@ -60,7 +60,7 @@
     --normal-font-weight: 465;
     --bold-font-weight: 785;
     --background-color: #000000;
-    --button-text:#00cc14;
+    --button-text: #00cc14;
     --color-hover-menu: rgba(0, 204, 20, 0.6);
     --background-image: repeating-linear-gradient(
         to right,
