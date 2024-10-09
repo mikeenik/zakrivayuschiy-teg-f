@@ -11,14 +11,15 @@
     <link rel="stylesheet" href="./styles/style.css" />
     <link rel="stylesheet" href="./styles/animations.css" />
     <link rel="stylesheet" href="./styles/themes.css" />
-    <link rel="icon" href="./images/favicon.ico" sizes="any">
+    <link rel="icon" href="./images/favicon.ico" sizes="any"/>
+    <link rel="apple-touch-icon" href="./images/favicon.png"/>
     <link rel="icon" href="./svg/favicon.svg" type="image/svg+xml">
     <script src="./scripts/set-theme.js"></script>
   </head>
   <body class="page">
     <header class="header">
-      <h1 class="main__title">&lt;/HTML&gt;</h1>
-      <p class="main__text">ЗАКРЫВАЮЩИй ТЕГ</p>
+      <a class="main__title" href="http://127.0.0.1:5500/">&lt;/html&gt;</a>
+      <h1 class="main__text">закрывающий тег</h1>
       <nav class="theme-menu header__theme-menu">
         <!-- Не меняйте разметку этого списка, иначе скрипты перестанут работать -->
         <ul class="theme-menu__list">
@@ -48,12 +49,12 @@
     <main class="main">
        <article class="card">
         <div class="card__title">
-          <h3>
+          <p>
             Фритрек и нулевой спринт: Подготовка к работе
-          </h3>
+          </h2>
         </div>
         <div class="card__image-block">
-          <div class="card__water-mark">&lt;/HTML&gt;</div>
+          <span class="card__water-mark">&lt;/HTML&gt;</span>
           <img src="./images/image.png" alt="Картинка с автобусом" loading="lazy" class="card__image">
         </div>
         <div class="card__description">
@@ -67,7 +68,7 @@
           </p>
         </div>
         <div class="card__button-block">
-          <button class="card__icon-button">
+          <button type="button" class="card__icon-button">
             <svg xmlns="http://www.w3.org/2000/svg" width="39" height="36" fill="none" class="like-icon">
               <g class="heart">
               <path class="contour" fill="#000" d="M12 6H9v3h3V6Zm3 0h-3v3h3V6ZM9 9H6v3h3V9Zm0 3H6v3h3v-3Zm0 3H6v3h3v-3Zm9-9h-3v3h3V6Zm-6 12H9v3h3v-3Zm3 3h-3v3h3v-3Zm3 3h-3v3h3v-3Zm9-18h3v3h-3V6Zm-3 0h3v3h-3V6Zm6 3h3v3h-3V9Zm0 3h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-9-9h3v3h-3V6Zm6 12h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0-18h-3v3h3V9Z"/>
@@ -79,19 +80,19 @@
               <path class="sparks" fill="none" d="M36 13h3v3h-3v-3Zm-9 14h3v3h-3v-3Zm-9 6h3v3h-3v-3Zm-9-6h3v3H9v-3ZM24 0h3v3h-3V0Zm9 3h3v3h-3V3ZM3 3h3v3H3V3Zm9-3h3v3h-3V0ZM0 13h3v3H0v-3Z"/>
               </svg>
           </button>
-          <button class="card__like-button">
+          <button type="button" class="button">
             <span class="button__text">Like</span>
           </button>
         </div>
        </article>
        <article class="card">
         <div class="card__title">
-          <h3>
+          <p>
             1 спринт: Я — чистый лист
-          </h3>
+          </h2>
         </div>
         <div class="card__image-block">
-          <div class="card__water-mark">&lt;/HTML&gt;</div>
+          <span class="card__water-mark">&lt;/HTML&gt;</span>
           <img src="./images/image.png" alt="Картинка с автобусом" loading="lazy" class="card__image card__grayscale">
         </div>
         <div class="card__description">
@@ -107,7 +108,7 @@
           </p>
         </div>
       <div class="card__button-block">
-        <button class="card__icon-button">
+        <button type="button" class="card__icon-button">
           <svg xmlns="http://www.w3.org/2000/svg" width="39" height="36" fill="none" class="like-icon">
             <g class="heart">
             <path class="contour" fill="#000" d="M12 6H9v3h3V6Zm3 0h-3v3h3V6ZM9 9H6v3h3V9Zm0 3H6v3h3v-3Zm0 3H6v3h3v-3Zm9-9h-3v3h3V6Zm-6 12H9v3h3v-3Zm3 3h-3v3h3v-3Zm3 3h-3v3h3v-3Zm9-18h3v3h-3V6Zm-3 0h3v3h-3V6Zm6 3h3v3h-3V9Zm0 3h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-9-9h3v3h-3V6Zm6 12h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0-18h-3v3h3V9Z"/>
@@ -119,19 +120,19 @@
             <path class="sparks" fill="none" d="M36 13h3v3h-3v-3Zm-9 14h3v3h-3v-3Zm-9 6h3v3h-3v-3Zm-9-6h3v3H9v-3ZM24 0h3v3h-3V0Zm9 3h3v3h-3V3ZM3 3h3v3H3V3Zm9-3h3v3h-3V0ZM0 13h3v3H0v-3Z"/>
             </svg>
         </button>
-        <button class="card__like-button">
+        <button type="button" class="button">
           <span class="button__text">Like</span>
         </button>
       </div>
        </article>
        <article class="card">
         <div class="card__title">
-          <h3>
+          <p>
             1 спринт: А если не получится?
-          </h3>
+          </h2>
         </div>
         <div class="card__image-block">
-          <div class="card__water-mark">&lt;/CSS&gt;</div>
+          <span class="card__water-mark">&lt;/CSS&gt;</span>
           <img src="./images/image.png" alt="Картинка с автобусом" loading="lazy" class="card__image card__saturate">
         </div>
         <div class="card__description">
@@ -145,7 +146,7 @@
           </p>
         </div>
       <div class="card__button-block">
-        <button class="card__icon-button">
+        <button type="button" class="card__icon-button">
           <svg xmlns="http://www.w3.org/2000/svg" width="39" height="36" fill="none" class="like-icon">
             <g class="heart">
             <path class="contour" fill="#000" d="M12 6H9v3h3V6Zm3 0h-3v3h3V6ZM9 9H6v3h3V9Zm0 3H6v3h3v-3Zm0 3H6v3h3v-3Zm9-9h-3v3h3V6Zm-6 12H9v3h3v-3Zm3 3h-3v3h3v-3Zm3 3h-3v3h3v-3Zm9-18h3v3h-3V6Zm-3 0h3v3h-3V6Zm6 3h3v3h-3V9Zm0 3h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-9-9h3v3h-3V6Zm6 12h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0-18h-3v3h3V9Z"/>
@@ -157,19 +158,19 @@
             <path class="sparks" fill="none" d="M36 13h3v3h-3v-3Zm-9 14h3v3h-3v-3Zm-9 6h3v3h-3v-3Zm-9-6h3v3H9v-3ZM24 0h3v3h-3V0Zm9 3h3v3h-3V3ZM3 3h3v3H3V3Zm9-3h3v3h-3V0ZM0 13h3v3H0v-3Z"/>
             </svg>
         </button>
-        <button class="card__like-button">
+        <button type="button" class="button">
           <span class="button__text">Like</span>
         </button>
       </div>
        </article>
        <article class="card">
         <div class="card__title">
-          <h3>
+          <p>
             2 спринт: Погоня за идеалом
-          </h3>
+          </h2>
         </div>
         <div class="card__image-block">
-          <div class="card__water-mark">&lt;desigions&gt;</div>
+          <span class="card__water-mark">&lt;desigions&gt;</span>
           <img src="./images/image.png" alt="Картинка с автобусом" loading="lazy" class="card__image card__contrast">
         </div>
         <div class="card__description">
@@ -185,7 +186,7 @@
           </p>
         </div>
       <div class="card__button-block">
-        <button class="card__icon-button">
+        <button type="button" class="card__icon-button">
           <svg xmlns="http://www.w3.org/2000/svg" width="39" height="36" fill="none" class="like-icon">
             <g class="heart">
             <path class="contour" fill="#000" d="M12 6H9v3h3V6Zm3 0h-3v3h3V6ZM9 9H6v3h3V9Zm0 3H6v3h3v-3Zm0 3H6v3h3v-3Zm9-9h-3v3h3V6Zm-6 12H9v3h3v-3Zm3 3h-3v3h3v-3Zm3 3h-3v3h3v-3Zm9-18h3v3h-3V6Zm-3 0h3v3h-3V6Zm6 3h3v3h-3V9Zm0 3h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-9-9h3v3h-3V6Zm6 12h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0-18h-3v3h3V9Z"/>
@@ -197,19 +198,19 @@
             <path class="sparks" fill="none" d="M36 13h3v3h-3v-3Zm-9 14h3v3h-3v-3Zm-9 6h3v3h-3v-3Zm-9-6h3v3H9v-3ZM24 0h3v3h-3V0Zm9 3h3v3h-3V3ZM3 3h3v3H3V3Zm9-3h3v3h-3V0ZM0 13h3v3H0v-3Z"/>
             </svg>
         </button>
-        <button class="card__like-button">
+        <button type="button" class="button">
           <span class="button__text">Like</span>
         </button>
       </div>
        </article>
        <article class="card">
         <div class="card__title">
-          <h3>
+          <p>
             2 спринт: О тех, кто рядом
-          </h3>
+          </h2>
         </div>
         <div class="card__image-block">
-          <div class="card__water-mark">care</div>
+          <span class="card__water-mark">care</span>
           <img src="./images/image.png" alt="Картинка с автобусом" loading="lazy" class="card__image card__invert">
         </div>
         <div class="card__description">
@@ -224,7 +225,7 @@
           </p>
         </div>
       <div class="card__button-block">
-        <button class="card__icon-button">
+        <button type="button" class="card__icon-button">
           <svg xmlns="http://www.w3.org/2000/svg" width="39" height="36" fill="none" class="like-icon">
             <g class="heart">
             <path class="contour" fill="#000" d="M12 6H9v3h3V6Zm3 0h-3v3h3V6ZM9 9H6v3h3V9Zm0 3H6v3h3v-3Zm0 3H6v3h3v-3Zm9-9h-3v3h3V6Zm-6 12H9v3h3v-3Zm3 3h-3v3h3v-3Zm3 3h-3v3h3v-3Zm9-18h3v3h-3V6Zm-3 0h3v3h-3V6Zm6 3h3v3h-3V9Zm0 3h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-9-9h3v3h-3V6Zm6 12h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0-18h-3v3h3V9Z"/>
@@ -236,19 +237,19 @@
             <path class="sparks" fill="none" d="M36 13h3v3h-3v-3Zm-9 14h3v3h-3v-3Zm-9 6h3v3h-3v-3Zm-9-6h3v3H9v-3ZM24 0h3v3h-3V0Zm9 3h3v3h-3V3ZM3 3h3v3H3V3Zm9-3h3v3h-3V0ZM0 13h3v3H0v-3Z"/>
             </svg>
         </button>
-        <button class="card__like-button">
+        <button type="button" class="button">
           <span class="button__text">Like</span>
         </button>
       </div>
        </article>
        <article class="card">
         <div class="card__title">
-          <h3>
+          <p>
             3 спринт: Обходные стратегии
-          </h3>
+          </h2>
         </div>
         <div class="card__image-block">
-          <div class="card__water-mark">&lt;support&gt;</div>
+          <span class="card__water-mark">&lt;support&gt;</span>
           <img src="./images/image.png" alt="Картинка с автобусом" loading="lazy" class="card__image card__sepia">
         </div>
         <div class="card__description">
@@ -262,7 +263,7 @@
           </p>
         </div>
       <div class="card__button-block">
-        <button class="card__icon-button">
+        <button type="button" class="card__icon-button">
           <svg xmlns="http://www.w3.org/2000/svg" width="39" height="36" fill="none" class="like-icon">
             <g class="heart">
             <path class="contour" fill="#000" d="M12 6H9v3h3V6Zm3 0h-3v3h3V6ZM9 9H6v3h3V9Zm0 3H6v3h3v-3Zm0 3H6v3h3v-3Zm9-9h-3v3h3V6Zm-6 12H9v3h3v-3Zm3 3h-3v3h3v-3Zm3 3h-3v3h3v-3Zm9-18h3v3h-3V6Zm-3 0h3v3h-3V6Zm6 3h3v3h-3V9Zm0 3h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-9-9h3v3h-3V6Zm6 12h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0-18h-3v3h3V9Z"/>
@@ -274,19 +275,19 @@
             <path class="sparks" fill="none" d="M36 13h3v3h-3v-3Zm-9 14h3v3h-3v-3Zm-9 6h3v3h-3v-3Zm-9-6h3v3H9v-3ZM24 0h3v3h-3V0Zm9 3h3v3h-3V3ZM3 3h3v3H3V3Zm9-3h3v3h-3V0ZM0 13h3v3H0v-3Z"/>
             </svg>
         </button>
-        <button class="card__like-button">
+        <button type="button" class="button">
           <span class="button__text">Like</span>
         </button>
       </div>
        </article>
        <article class="card">
         <div class="card__title">
-          <h3>
+          <p>
             3 спринт: Обходные стратегии
-          </h3>
+          </h2>
         </div>
         <div class="card__image-block">
-          <div class="card__water-mark">&lt;lifes-style: none;&gt;</div>
+          <span class="card__water-mark">&lt;lifes-style: none;&gt;</span>
           <img src="./images/image.png" alt="Картинка с автобусом" loading="lazy" class="card__image card__blur">
         </div>
         <div class="card__description">
@@ -301,7 +302,7 @@
           </p>
         </div>
       <div class="card__button-block">
-        <button class="card__icon-button">
+        <button type="button" class="card__icon-button">
           <svg xmlns="http://www.w3.org/2000/svg" width="39" height="36" fill="none" class="like-icon">
             <g class="heart">
             <path class="contour" fill="#000" d="M12 6H9v3h3V6Zm3 0h-3v3h3V6ZM9 9H6v3h3V9Zm0 3H6v3h3v-3Zm0 3H6v3h3v-3Zm9-9h-3v3h3V6Zm-6 12H9v3h3v-3Zm3 3h-3v3h3v-3Zm3 3h-3v3h3v-3Zm9-18h3v3h-3V6Zm-3 0h3v3h-3V6Zm6 3h3v3h-3V9Zm0 3h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-9-9h3v3h-3V6Zm6 12h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0-18h-3v3h3V9Z"/>
@@ -313,19 +314,19 @@
             <path class="sparks" fill="none" d="M36 13h3v3h-3v-3Zm-9 14h3v3h-3v-3Zm-9 6h3v3h-3v-3Zm-9-6h3v3H9v-3ZM24 0h3v3h-3V0Zm9 3h3v3h-3V3ZM3 3h3v3H3V3Zm9-3h3v3h-3V0ZM0 13h3v3H0v-3Z"/>
             </svg>
         </button>
-        <button class="card__like-button">
+        <button type="button" class="button">
           <span class="button__text">Like</span>
         </button>
       </div>
        </article>
        <article class="card">
         <div class="card__title">
-          <h3>
+          <p>
             «Сейчас я здесь»
-          </h3>
+          </h2>
         </div>
         <div class="card__image-block">
-          <div class="card__water-mark">&lt;experience&gt;</div>
+          <span class="card__water-mark">&lt;experience&gt;</span>
           <img src="./images/image.png" alt="Картинка с автобусом" loading="lazy" class="card__image card__saturate-sepia">
         </div>
         <div class="card__description">
@@ -342,7 +343,7 @@
           </p>
         </div>
       <div class="card__button-block">
-        <button class="card__icon-button">
+        <button type="button" class="card__icon-button">
           <svg xmlns="http://www.w3.org/2000/svg" width="39" height="36" fill="none" class="like-icon">
             <g class="heart">
             <path class="contour" fill="#000" d="M12 6H9v3h3V6Zm3 0h-3v3h3V6ZM9 9H6v3h3V9Zm0 3H6v3h3v-3Zm0 3H6v3h3v-3Zm9-9h-3v3h3V6Zm-6 12H9v3h3v-3Zm3 3h-3v3h3v-3Zm3 3h-3v3h3v-3Zm9-18h3v3h-3V6Zm-3 0h3v3h-3V6Zm6 3h3v3h-3V9Zm0 3h3v3h-3v-3Zm0 3h3v3h-3v-3Zm-9-9h3v3h-3V6Zm6 12h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm-3 3h3v3h-3v-3Zm0 3h-3v3h3v-3Zm0-18h-3v3h3V9Z"/>
@@ -354,35 +355,37 @@
             <path class="sparks" fill="none" d="M36 13h3v3h-3v-3Zm-9 14h3v3h-3v-3Zm-9 6h3v3h-3v-3Zm-9-6h3v3H9v-3ZM24 0h3v3h-3V0Zm9 3h3v3h-3V3ZM3 3h3v3H3V3Zm9-3h3v3h-3V0ZM0 13h3v3H0v-3Z"/>
             </svg>
         </button>
-        <button class="card__like-button">
+        <button type="button" class="button">
           <span class="button__text">Like</span>
         </button>
       </div>
        </article>
-    </main>
-    <footer class="footer">
-      <button type="button" class="footer__button" onclick="window['dialog-id'].showModal();"
-      aria-controls="dialog-id">
-         <svg class="footer__svg" viewBox="0 0 39 39">
-          <use href="./svg/floppy.svg#floppy"></use>
-         </svg>
-         <span>Сохранить на память</span>
-      </button>
-    </footer>
-    <dialog id="dialog-id">
-      <div class="dialog">
-        <div class="dialog__info">
-          <svg class="dialog__floppy" viewBox="0 0 39 39">
+       <div class="save__block">
+        <button type="button" class="dialog__button" onclick="window['dialog-id'].showModal();"
+        aria-controls="dialog-id">
+           <svg class="save__svg button__text" viewBox="0 0 39 39">
             <use href="./svg/floppy.svg#floppy"></use>
-          </svg>
-          <p class="dialog__text">
-            Вставьте
-    дискету, чтобы продолжить
-          </p>
+           </svg>
+           <span class="button__text">Сохранить на память</span>
+        </button>
+       </div>
+      <dialog id="dialog-id">
+        <div class="dialog">
+          <div class="dialog__info">
+            <svg class="dialog__floppy" viewBox="0 0 39 39">
+              <use href="./svg/floppy.svg#floppy"></use>
+            </svg>
+            <p class="dialog__text">
+              Вставьте
+      дискету, чтобы продолжить
+            </p>
+          </div>
+          <button class="dialog__button" type="button" onclick="window['dialog-id'].close();">
+            <span class="button__text">ОК</span>
+          </button>
         </div>
-        <button class="dialog__button" type="button" onclick="window['dialog-id'].close();">OK</button>
-      </div>
-    </dialog>
+      </dialog>
+    </main>
     <script src="./scripts/like.js"></script>
   </body>
 </html>

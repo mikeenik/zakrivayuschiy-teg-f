@@ -7,12 +7,11 @@
 
 /*Светлая тема*/
 :root.theme-light {
-  --main-font: "Inter-Variable";
-  --accent-font: "Press Start 2P";
   --normal-font-weight: 400;
   --bold-font-weight: 700;
   --background-color: #ffffff;
   --accent-color: #000000;
+  --button-text:#ffffff;
   --color-hover-menu: rgba(0, 0, 0, 0.6);
   --background-image: repeating-linear-gradient(
       to right,
@@ -33,11 +32,10 @@
 
 /*Темная тема*/
 :root.theme-dark {
-  --main-font: "Inter-Variable";
-  --accent-font: "Press Start 2P";
-  --normal-font-weight: 450;
-  --bold-font-weight: 750;
+  --normal-font-weight: 465;
+  --bold-font-weight: 785;
   --background-color: #000000;
+  --button-text:#00cc14;
   --accent-color: #00cc14;
   --color-hover-menu: rgba(0, 204, 20, 0.6);
   --background-image: repeating-linear-gradient(
@@ -57,39 +55,12 @@
     linear-gradient(0deg, #004306 0%, #007f0c 100%);
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    --main-font: "Inter-Variable";
-    --accent-font: "Press Start 2P";
-    --normal-font-weight: 400;
-    --bold-font-weight: 700;
-    --background-color: #ffffff;
-    --accent-color: #000000;
-    --background-image: repeating-linear-gradient(
-        to right,
-        #d3d3d3 0%,
-        #d3d3d3 2px,
-        transparent 2px,
-        transparent 4px
-      ),
-      repeating-linear-gradient(
-        to bottom,
-        #d3d3d3 0%,
-        #d3d3d3 2px,
-        transparent 2px,
-        transparent 4px
-      ),
-      linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a 100%);
-  }
-}
-
 @media (prefers-color-scheme: dark) {
   :root {
-    --main-font: "Inter-Variable";
-    --accent-font: "Press Start 2P";
-    --normal-font-weight: 450;
-    --bold-font-weight: 750;
+    --normal-font-weight: 465;
+    --bold-font-weight: 785;
     --background-color: #000000;
+    --button-text:#00cc14;
     --color-hover-menu: rgba(0, 204, 20, 0.6);
     --background-image: repeating-linear-gradient(
         to right,
