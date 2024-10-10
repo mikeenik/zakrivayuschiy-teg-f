@@ -1,6 +1,6 @@
 /* этот скрипт использует такие имена классов:
 ✦ like-icon — для svg-иконки анимированного сердца
-✦ button — для кнопки Like рядом с иконкой
+✦ card__like-button — для кнопки Like рядом с иконкой
 ✦ card__icon-button — для кнопки, оборачивающей иконку
 ✦ card__icon-button — для кнопки, оборачивающей иконку
 ✦ is-liked — для обозначения состояния лайкнутой иконки в виде сердца
@@ -9,7 +9,7 @@
 */
 
 const likeHeartArray = document.querySelectorAll('.like-icon');
-const likeButtonArray = document.querySelectorAll('.button');
+const likeButtonArray = document.querySelectorAll('.card__like-button');
 const iconButtonArray = document.querySelectorAll('.card__icon-button');
 
 iconButtonArray.forEach((iconButton, index) => {
