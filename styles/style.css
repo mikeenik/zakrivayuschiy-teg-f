@@ -243,20 +243,15 @@
   overflow: hidden;
   justify-content: center;
   align-items: center;
-  padding: 12.7px 17px;
+  padding: 15px 17px;
   gap: 8px;
   transition: box-shadow 0.3s ease;
-  inline-size: 49%;
+  inline-size: 48%;
 }
 
 .card__like-button {
   width: 130px;
   height: 38px;
-}
-
-.dialog__button {
-  min-width: 293px;
-  height: 55px;
 }
 
 .button:focus {
@@ -374,8 +369,7 @@
   background-color: var(--background-color);
   color: var(--accent-color);
   border: 2px solid var(--accent-color);
-  height: 191px;
-  width: 353px;
+  overflow: hidden;
 }
 
 dialog::backdrop {
@@ -387,8 +381,8 @@ dialog::backdrop {
 }
 
 dialog {
-  margin-top: 440px;
   padding: 0;
+  overflow: hidden;
 }
 
 .dialog__floppy {
@@ -411,6 +405,10 @@ dialog {
   color: var(--accent-color);
 }
 
+.button__ok {
+  inline-size: 100%;
+}
+
 /*---------------------------------------------------------------------------------------------------------------------------------------*/
 
 /*↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓_MOBILE_↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓*/
@@ -427,12 +425,14 @@ dialog {
     right: 13px;
   }
 
+  .dialog {
+    align-items: start;
+  }
+
   .dialog__button {
     display: flex;
     flex-direction: column;
-    padding: 12.7px 17px;
     inline-size: 83%;
-    height: 84px;
   }
 
   .dialog__info {
@@ -440,20 +440,16 @@ dialog {
   }
 
   .dialog__text {
-    inline-size: 100%;
+    inline-size: 77%;
   }
 
-  .button__text {
-    width: 120%;
+  .button__ok {
+    inline-size: 96%;
   }
 
   .save__svg {
     width: 28px;
     height: 28px;
-  }
-
-  dialog {
-    margin-top: 235px;
   }
 }
 /*---------------------------------------------------------------------------------------------------------------------------------------*/
